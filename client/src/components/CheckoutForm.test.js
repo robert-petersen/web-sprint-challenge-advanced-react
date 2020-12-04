@@ -23,7 +23,7 @@ test("form shows success message on submit with form details", () => {
   const state = screen.getByLabelText(/state/i);
   const zip = screen.getByLabelText(/zip/i);
 
-  userEvent.type(firstName, "rob");
+  userEvent.type(firstName, "robert");
   userEvent.type(lastName, "rob");
   userEvent.type(address, "rob");
   userEvent.type(city, "rob");
@@ -33,6 +33,6 @@ test("form shows success message on submit with form details", () => {
   const checkOut = screen.getByRole("button");
   userEvent.click(checkOut);
 
-  const successMessage = screen.queryByText("rob");
+  const successMessage = screen.queryByText("robert");
   expect(successMessage).toBeInTheDocument();
 });
