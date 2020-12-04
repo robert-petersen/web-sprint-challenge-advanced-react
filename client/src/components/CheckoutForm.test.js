@@ -17,6 +17,7 @@ test("form shows success message on submit with form details", () => {
 
   const firstName = screen.getByLabelText(/first name/i);
   // console.log(firstName);
+    // console.log(firstName);
   const lastName = screen.getByLabelText(/last name/i);
   const address = screen.getByLabelText(/address/i);
   const city = screen.getByLabelText(/city/i);
